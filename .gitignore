@@ -44,6 +44,5 @@ project/project/
 # Mac files
 .DS_Store
 
-# SBT configuration files
-# remove if specific version of SBT is required
-project/build.properties 
+# SBT
+project/target/

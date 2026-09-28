@@ -21,6 +21,7 @@ repositories {
 
 dependencies {
     implementation("org.apache.commons:commons-collections4:4.5.0")
+    implementation("commons-cli:commons-cli:1.9.0")
     
     testImplementation("org.junit.jupiter:junit-jupiter:5.14.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")

@@ -1,0 +1,80 @@
+Student: Tuker-Moose
+
+================================================================================
+GRADING REPORT — COMP 371 PROJECT 2A
+================================================================================
+
+### 1. Project Structure — 0.50 / 0.50
+
+Evidence:
+* Clean layout: src/main/scala/edu/luc/cs/consoleapp/SlidingQueue.scala, OutputHandler.scala, Main.scala, build.sbt, README.md, .gitignore, .github/workflows/scala.yml
+
+Deductions:
+* None
+
+Points Awarded: 0.50 / 0.50
+
+### 2. Correctness — 1.00 / 1.00
+
+Evidence:
+* sbt test: PASS (4 ScalaTest suites passed)
+* sbt stage: PASS (generated target/universal/stage/bin/main)
+* Empty input: exits 0 with no output
+* Nonempty input: produces correct output
+* Argument handling: exits 2 on multiple args, exits 4 on invalid args
+
+Deductions:
+* None
+
+Points Awarded: 1.00 / 1.00
+
+### 3. Scalability — 0.50 / 0.50
+
+Evidence:
+* Decoupled SlidingQueue component taking OutputHandler trait
+* Lazy stream processing over Iterator[String]
+* Scalability screenshots doc/scalability_1.png and doc/scalability_2.png verify constant memory over several minutes
+
+Deductions:
+* None
+
+Points Awarded: 0.50 / 0.50
+
+### 4. Manual Testing — 0.50 / 0.50
+
+Evidence:
+* doc/manual_test_empty.png, doc/manual_test_nonempty.png, and two htop scalability screenshots provided
+
+Deductions:
+* None
+
+Points Awarded: 0.50 / 0.50
+
+### 5. AI Disclosure / Affidavit — 0.50 / 0.50
+
+Evidence:
+* doc/ai-disclosure.md: Very thorough affidavit of LLM assistance detailing Google Gemini usage, prompts, and verification steps
+
+Deductions:
+* None
+
+Points Awarded: 0.50 / 0.50
+
+### Extra Credit — +0.45 / 0.50
+
+Evidence:
+* 4 automated ScalaTest unit tests in TestSlidingQueue.scala verifying empty input, sliding window eviction, smaller queue capacity, and capacity 1
+
+Points Awarded: +0.45 / 0.50
+
+================================================================================
+FINAL SCORE
+================================================================================
+Base Score:   3.00 / 3.00
+Extra Credit: +0.45 / 0.50
+Total Score:  3.45 / 3.00
+
+--------------------------------------------------------------------------------
+STUDENT-FACING FEEDBACK
+--------------------------------------------------------------------------------
+Excellent submission! Your decoupled design using SlidingQueue and OutputHandler is clean, robust, and maintains constant space under heavy streaming. All functional tests, manual screenshots, argument checks, and your detailed AI affidavit are exemplary, and your automated unit tests earned +0.45 extra credit.
